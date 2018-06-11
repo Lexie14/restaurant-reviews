@@ -40,6 +40,14 @@ h6 {
 /* ====================== Main Page ====================== */
 
 /* ====================== Navigation ====================== */
+.skip-link {
+  position: absolute;
+  top: -100px;
+}
+.skip-link:focus {
+  top: 0;
+  color: #fff;
+} 
 
 nav {
 	width: 100%;

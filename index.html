@@ -9,9 +9,10 @@
 </head>
 
 <body>
+  <a href="#filters" class="skip-link">Skip to the Filter</a>
   <header>
     <nav>
-      <h1 ><a href="/"><span class="heading">Restaurant Reviews</span></a></h1>
+      <h1 ><a href="/" tabindex="-1"><span class="heading">Restaurant Reviews</span></a></h1>
     </nav>
   </header>
 
@@ -19,7 +20,7 @@
     <section id="map-container">
       <div id="map"></div>
     </section>
-    <section>
+    <section id="filters">
       <div class="filter-options" tabindex="0">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
