@@ -84,7 +84,6 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => {
   const hours = document.getElementById('restaurant-hours');
   hours.setAttribute('tabindex', '0');
-  // hours.setAttribute('aria-label', 'Operating hours');
   for (let key in operatingHours) {
     const row = document.createElement('tr');
 
@@ -106,6 +105,8 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
   const title = document.createElement('h2');
+  title.setAttribute('tabindex', '0');
+  title.setAttribute('aria-label', 'List of Reviews');
   title.innerHTML = 'Reviews';
   container.appendChild(title);
 
@@ -127,26 +128,37 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  */
 createReviewHTML = (review) => {
   const li = document.createElement('li');
+  li.setAttribute('tabindex', '0');
+  li.setAttribute('aria-label', 'review section');
+
   const div = document.createElement('div');
   div.className = 'rewhead';
   li.appendChild(div);
   const name = document.createElement('p');
   name.className = 'name';
+  name.setAttribute('tabindex', '0');
+  name.setAttribute('aria-label', 'Name of the author is' + review.name);
   name.innerHTML = review.name;
   div.appendChild(name);
 
   const date = document.createElement('span');
   date.className = 'date';
+  date.setAttribute('tabindex', '0');
+  date.setAttribute('aria-label', 'Review date is' + review.date);
   date.innerHTML = review.date;
   div.appendChild(date);
 
   const rating = document.createElement('p');
   rating.className = 'rating';
+  rating.setAttribute('tabindex', '0');
+  rating.setAttribute('aria-label', 'Rating of the restaurant is' + review.rating);
   rating.innerHTML = `Rating: ${review.rating}`;
   li.appendChild(rating);
 
   const comments = document.createElement('p');
   comments.className = 'comments';
+  comments.setAttribute('tabindex', '0');
+  comments.setAttribute('aria-label', 'Author\'s comments are the following' + review.comments);
   comments.innerHTML = review.comments;
   li.appendChild(comments);
 
