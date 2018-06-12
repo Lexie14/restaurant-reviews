@@ -15,11 +15,11 @@
   <header>
     <!-- Beginning nav -->
     <nav>
-      <h1 ><a href="/"><span class = "heading">Restaurant Reviews</span></a></h1>
+      <h1><a href="/" aria-label="Link to Home Page"><span class = "heading">Restaurant Reviews</span></a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
+    <ul id="breadcrumb">
+      <li><a href="/" tabindex="-1">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
@@ -29,7 +29,7 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container">
+    <section id="map-container" tabindex="0" aria-label="map">
       <div id="map"></div>
     </section>
     <!-- End map -->
@@ -39,6 +39,7 @@
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>
+      <h2 tabindex="0" aria-label="working hours"></h2>
       <table id="restaurant-hours"></table>
     </section>
     <!-- end restaurant -->
