@@ -1,11 +1,11 @@
-# Project Overview
+## Project Overview
 
  This project is built upon the ready website dedicated to the restaurants' reviews. Main goals of the project are:
  1. Make it fully responsive: visually and functionally accessible regardless of the device and/or screen size.
  2. Make it accessible for the visually impaired people via providing its accessibility for a screenreader.
  3. Make this website rendered offline via using ServiceWorker and Cache API.
  
-# How to run
+## How to run
 
 1. Clone this repository.
 2. Launch a local client server using Python.  
