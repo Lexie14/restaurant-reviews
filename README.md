@@ -9,14 +9,10 @@
 
 1. Clone this repository.
 2. Launch a local client server using Python.
-  * 2.1. Check if there is python already installed on you PC:
-   * run python -v
-   * - and if not, install it:
-   * export PATH="$PATH:/c/Python27"
-  * 2.2. Run from the project's directory in a terminal:
-   * python -m SimpleHTTPServer 8000
-  * 2.3. Visit the site in your browser at:
-   * http://localhost:8000
+   2.1. Check if there is python already installed on you PC. Run: python -v
+    * and if not, install it: export PATH="$PATH:/c/Python27".
+   2.2. Run from the project's directory in a terminal: python -m SimpleHTTPServer 8000.
+   2.3. Visit the site in your browser at: http://localhost:8000.
 
 
 
