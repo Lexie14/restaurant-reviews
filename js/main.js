@@ -1,3 +1,14 @@
+/**
+ * Register the service worker
+ */
+if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('./sw.js').then(function() {
+        console.log('Service Worker registered');
+    }).catch(function() {
+        console.log('Registration failed');
+    });
+};
+
 let restaurants,
     neighborhoods,
     cuisines
