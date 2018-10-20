@@ -14,6 +14,8 @@
    2.3. Visit the site in your browser at: http://localhost:8000
 
 ![Screenshot](rest1.jpg)
+
+
 ![Screenshot](rest2.jpg)
 
 
