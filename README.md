@@ -13,7 +13,8 @@
    2.2. Run from the project's directory in a terminal: **python -m SimpleHTTPServer 8000**  
    2.3. Visit the site in your browser at: http://localhost:8000
 
-
+![Screenshot](rest1.jpg)
+![Screenshot](rest2.jpg)
 
 
 
